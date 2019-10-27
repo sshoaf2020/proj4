@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<style type="text/css">
+input{
+	margin-bottom:15px;
+}
+</style>
+<title>Registration</title>
+<h1>Register for an account!</h1>
+<section>
+	<form action="users" method="post" id="form">
+		<div><label>Username:<input type="text" id="username" name="username"/></label><i id="usernameStatus" class="material-icons">done</i></div>
+		<div><label>Name:<input type="text" id="name" name="name"/></label></div>
+		<div><label>Password:<input type="password" id="password" name="password"/></label></div>
+		<div style="margin-bottom: 15px;">
+			<span id="passwordmeter"><span></span></span>
+			<span id="passwordmessage" aria-live="polite"></span>
+		</div>
+		<div><label>Confirm Password:<input type="password" id="confirm_password"/></label></div>
+		<button type="submit">Submit</button>
+	</form> 
+</section>
+<div  id="error"><p>Enter Info</p></div>
+<script type="text/javascript" src="registration.js"></script>
+<script type="text/javascript" src="zxcvbn.js"></script>
+<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
