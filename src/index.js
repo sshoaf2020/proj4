@@ -204,7 +204,7 @@ app.get("/index.html", (req, res) => {
 	<section>
 		<p>
 		${hello}
-		Go <a href="static/login.html">here to login</a> or <a href="static/registration.html">here to register</a>.
+		Go <a href="login.html">here to login</a> or <a href="registration.html">here to register</a>.
 		</p>
 	</section>`;
   res.send(page);
