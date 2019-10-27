@@ -165,12 +165,12 @@ app.get('/index.html',(req,res)=>{
 	}
 	let page = `
 	<!DOCTYPE html>
-	<title>Project 3</title>
-	<h1>Project 3</h1>
+	<title>Project 4</title>
+	<h1>Project 4</h1>
 	<section>
 		<p>
 		${hello}
-		Go <a href="static/login.html">here to login</a> or <a href="static/registration.html">here to register</a>.
+		Go <a href="login.html">here to login</a> or <a href="registration.html">here to register</a>.
 		</p>
 	</section>`
 	res.send(page)
